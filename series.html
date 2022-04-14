@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style/serie.css">
+	<title>NETFLIX CLONE</title>
+
+	<!-- responsividade -->
+	<link rel="stylesheet" href="style/responsive.css">
+
+	<!-- owl css -->
+	<link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+	<link rel="stylesheet" href="style/owl/owl.theme.carousel.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h2 class="logo">NETFLIX</h2>
+			<nav>
+				<a href="index.html">Início</a>
+				<a href="series.html">Séries</a>
+				<a href="index.html">Filmes</a>
+				<a href="index.html">Documentários</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="serie_principal">
+			<div class="container">
+				<h3 class="titulo">BREAKING BAD</h3>
+				<p class="descricao">Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos.</p>
+				<div class="botoes">
+					<button id="assistir" role="button" class="botao">
+						<i class="fa-solid fa-play"></i>
+						ASSISTIR AGORA
+					</button>
+					<button id="infos" role="button" class="botao">
+						<i class="fa-solid fa-list"></i>
+						MAIS INFORMAÇÕES
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="carrosel-series">
+		<div class="owl-carousel owl-theme">
+				<div class="item"><img src="img-series/serie01.jpg" class="box-series"></div>
+				<div class="item"><img src="img-series/serie02.jpg" class="box-series"></div>
+				<div class="item"><img src="img-series/serie03.jpg" class="box-series"></div>
+				<div class="item"><img src="img-series/serie04.jpg" class="box-series"></div>
+				<div class="item"><img src="img-series/serie05.jpg" class="box-series"></div>
+				<div class="item"><img src="img-series/serie06.jpg" class="box-series"></div>
+				<div class="item"><img src="img-series/serie07.jpg" class="box-series"></div>
+		</div>
+	</div>
+
+
+	<script src="https://kit.fontawesome.com/aeb4618ba2.js" crossorigin="anonymous"></script>
+	<script src="js/owl/jquery.min.js"></script>
+	<script src="js/owl/owl.carousel.min.js"></script>
+	<script src="js/owl/setup.js"></script>
+	<script type="text/javascript">
+    document.getElementById("infos").onclick = function () {
+        location.href = "https://www.themoviedb.org/tv/1396-breaking-bad?language=pt-BR";
+    };
+	</script>
+</body>
+</html>

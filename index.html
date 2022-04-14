@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style/main.css">
+	<title>NETFLIX CLONE</title>
+
+	<!-- responsividade -->
+	<link rel="stylesheet" href="style/responsive.css">
+
+	<!-- owl css -->
+	<link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+	<link rel="stylesheet" href="style/owl/owl.theme.carousel.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h2 class="logo">NETFLIX</h2>
+			<nav>
+				<a href="index.html">Início</a>
+				<a href="series.html">Séries</a>
+				<a href="index.html">Filmes</a>
+				<a href="index.html">Documentários</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="filme_principal">
+			<div class="container">
+				<h3 class="titulo">MINARI</h3>
+				<p class="descricao">Uma família coreano-americana se muda para uma fazenda no Arkansas em busca de seu próprio sonho americano. Em meio aos desafios dessa nova vida, eles descobrem a inegável resiliência da família e o que realmente faz um lar.</p>
+				<div class="botoes">
+					<button id="assistir" role="button" class="botao">
+						<i class="fa-solid fa-play"></i>
+						ASSISTIR AGORA
+					</button>
+					<button id ="infos" role="button" class="botao">
+						<i class="fa-solid fa-list"></i>
+						MAIS INFORMAÇÕES
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="carrosel-filmes">
+		<div class="owl-carousel owl-theme">
+				<div class="item"><img src="img/mini01.jpg" class="box-filme"></div>
+				<div class="item"><img src="img/mini02.jpg" class="box-filme"></div>
+				<div class="item"><img src="img/mini03.jpg" class="box-filme"></div>
+				<div class="item"><img src="img/mini04.jpg" class="box-filme"></div>
+				<div class="item"><img src="img/mini05.jpg" class="box-filme"></div>
+				<div class="item"><img src="img/mini06.jpg" class="box-filme"></div>
+				<div class="item"><img src="img/mini07.jpg" class="box-filme"></div>
+				<div class="item"><img src="img/mini08.jpg" class="box-filme"></div>
+				<div class="item"><img src="img/mini09.jpg" class="box-filme"></div>
+				<div class="item"><img src="img/mini10.jpg" class="box-filme"></div>
+		</div>
+	</div>
+
+
+	<script src="https://kit.fontawesome.com/aeb4618ba2.js" crossorigin="anonymous"></script>
+	<script src="js/owl/jquery.min.js"></script>
+	<script src="js/owl/owl.carousel.min.js"></script>
+	<script src="js/owl/setup.js"></script>
+	<script type="text/javascript">
+    document.getElementById("infos").onclick = function () {
+        location.href = "https://www.themoviedb.org/movie/615643-minari?language=pt-BR";
+    };
+	</script>
+</body>
+</html>
